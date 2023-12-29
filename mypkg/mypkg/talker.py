@@ -1,8 +1,7 @@
 import rclpy
 from rclpy.node import Node
-from person_msgs.srv import Query
+from person_msgs.msg import Int16
 
-<<<<<<< HEAD
 class Talker():
     def __init__(self, node):
         self.pub = node.create_publisher(Int16, "countup", 10)
@@ -20,18 +19,7 @@ def main():
     node = Node("talker")
     talker = Talker(node)
     rclpy.spin(node)
-=======
-def cb(request, response):
-    if request.name == "大坪直生":
-        response.age = 20
-    else:
-        response.age = 255
-    
-    return response
    
-rclpy.init()
-node = Node("talker")
-srv = node.create_service(Query, "query", cb)
-rclpy.spin(node)
->>>>>>> 21979bbadd24cd0a829297ee7e2d5d64d814aae4
+if __name__ == '__main__':
+    main()
 
