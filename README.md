@@ -7,7 +7,7 @@
 ## 実行例
 　＊ ros2 launch mypkg talk_listen.launch.py
      　
-     [listener-2] [INFO] [1703809975.434389695] [listener]: age: 20
+  ＊  [listener-2] [INFO] [1703809975.434389695] [listener]: age: 20
      
      のように実行できます。
 
